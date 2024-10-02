@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ContextGPT Options</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    label { display: block; margin-top: 10px; }
+    input[type="text"], input[type="url"] { width: 300px; }
+    button { margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <h1>ContextGPT Options</h1>
+  <label>
+    <input type="checkbox" id="enabled"> Enable ContextGPT
+  </label>
+  <label for="apiUrl">API URL:</label>
+  <input type="url" id="apiUrl">
+  <label for="apiKey">API Key:</label>
+  <input type="text" id="apiKey">
+  <button id="save">Save</button>
+  <script src="options.js"></script>
+</body>
+</html>
