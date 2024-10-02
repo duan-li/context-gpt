@@ -47,3 +47,11 @@ document.addEventListener('keydown', (event) => {
     }
     }
 });
+
+// Add event listener for the 'click' event on the document
+document.addEventListener('click', (event) => {
+  const existingDialog = document.querySelector('div[style*="position: fixed"]');
+  if (existingDialog && !existingDialog.contains(event.target)) {
+    document.body.removeChild(existingDialog);
+  }
+});
