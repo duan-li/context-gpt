@@ -28,8 +28,6 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
       })
       .then((response) => response.text())
       .then((data) => {
-        console.log("data");
-        console.log(data);
         const dataObj = JSON.parse(data);
 
         if (dataObj.error) {
