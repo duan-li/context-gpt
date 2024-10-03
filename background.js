@@ -10,7 +10,7 @@ chrome.runtime.onInstalled.addListener(() => {
 chrome.contextMenus.onClicked.addListener((info, tab) => {
 
   if (info.menuItemId === "contextGPT") {
-    chrome.storage.local.get(["apiUrl", "apiKey", "enabled"], (result) => {
+    chrome.storage.local.get(["apiKey", "enabled"], (result) => {
       if (result.enabled && result.apiKey) {
         fetch("https://api.openai.com/v1/chat/completions", {
           method: "POST",
