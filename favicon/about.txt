@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Mina
+- Font Author: Copyright 2015 The Mina Project Authors, with Reserved Font Name 'Exo'
+- Font Source: https://fonts.gstatic.com/s/mina/v11/-nF8OGc18vARl4NMyiXZ95OkJwA.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
