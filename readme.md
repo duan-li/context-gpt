@@ -1,7 +1,9 @@
 # ContextGPT Chrome Extension
 
 <p align="center">
-  <img src="https://github.com/duan-li/context-gpt/raw/main/icon128.png" alt="ContextGPT Logo" width="128" height="128">
+    <a href="https://github.com/duan-li/context-gpt" target="_blank">
+        <img src="https://github.com/duan-li/context-gpt/raw/main/icon128.png" width="128" alt="ContextGPT Logo">
+    </a>
 </p>
 
 
