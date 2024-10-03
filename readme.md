@@ -1,5 +1,10 @@
 # ContextGPT Chrome Extension
 
+<p align="center">
+  <img src="https://github.com/duan-li/context-gpt/raw/main/icon128.png" alt="ContextGPT Logo" width="128" height="128">
+</p>
+
+
 ContextGPT is a Chrome extension that allows users to send selected text from any webpage to a specified API and display the response in a dialog box.
 
 ## Features
