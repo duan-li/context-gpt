@@ -32,7 +32,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     document.body.appendChild(dialog);
   } else if (request.action === "closeDialog") {
     const existingDialog = document.querySelector('div[style*="position: fixed"]');
-    if (existingDialog) {
+    if (existingDialog && document.body.contains(existingDialog)) {
       document.body.removeChild(existingDialog);
     }
   }
@@ -42,7 +42,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
 document.addEventListener('keydown', (event) => {
   if (event.key === 'Escape') {
     const existingDialog = document.querySelector('div[style*="position: fixed"]');
-    if (existingDialog) {
+    if (existingDialog && document.body.contains(existingDialog)) {
       document.body.removeChild(existingDialog);
     }
     }
@@ -51,7 +51,7 @@ document.addEventListener('keydown', (event) => {
 // Add event listener for the 'click' event on the document
 document.addEventListener('click', (event) => {
   const existingDialog = document.querySelector('div[style*="position: fixed"]');
-  if (existingDialog && !existingDialog.contains(event.target)) {
+  if (existingDialog && !existingDialog.contains(event.target) && document.body.contains(existingDialog)) {
     document.body.removeChild(existingDialog);
   }
 });
